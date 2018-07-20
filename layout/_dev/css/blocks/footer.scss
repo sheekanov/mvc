@@ -1,0 +1,12 @@
+.footer__text{
+  color: white;
+}
+
+.footer__link{
+  color: white;
+  text-decoration: underline;
+
+  &:hover{
+    text-decoration: none;
+  }
+}

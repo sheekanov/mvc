@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1140px">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>{% block title %}{%  endblock %}</title>
+    <link rel="stylesheet" href="/css/vendor.min.css">
+    <link rel="stylesheet" href="/css/styles.min.css">
+    <script src="https://vk.com/js/api/openapi.js?157" type="text/javascript"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="maincontent">
+        {% block header %}
+            {{ include('header.twig') }}
+        {% endblock %}
+        <div class="container">
+            {% block aside %}
+            {% endblock %}
+            {% block main %}
+            {% endblock %}
+        </div>
+    </div>
+</div>
+{% block bodyEnd %}{% endblock %}
+{{ include('footer.twig') }}
+<script src="/js/vendor.min.js"></script>
+<script src="/js/script.min.js"></script>
+</body>
+</html>
